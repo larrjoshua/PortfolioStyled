@@ -2860,6 +2860,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #1e30f3;
 }
 
+.btn-green {
+  --bs-btn-color: #FEFAE0; /* Off-white text for contrast */
+  --bs-btn-bg: #045f07; /* Dark green background */
+  --bs-btn-border-color: #0A400C; /* Dark green border */
+  --bs-btn-hover-color: #FEFAE0; /* Keep text off-white on hover */
+  --bs-btn-hover-bg: #819067; /* Muted olive green on hover */
+  --bs-btn-hover-border-color: #819067; /* Muted olive green border on hover */
+  --bs-btn-focus-shadow-rgb: 10, 64, 12; /* Updated RGB for a darker green shadow */
+  --bs-btn-active-color: #FEFAE0; /* Keep text off-white when active */
+  --bs-btn-active-bg: #819067; /* Same as hover, a muted olive */
+  --bs-btn-active-border-color: #819067; /* Same as hover */
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Unchanged */
+  --bs-btn-disabled-color: #B1AB86; /* Light olive for disabled text */
+  --bs-btn-disabled-bg: #0A400C; /* Use the main background color */
+  --bs-btn-disabled-border-color: #0A400C; /* Use the main border color */
+}
+
 .btn-secondary {
   --bs-btn-color: #000;
   --bs-btn-bg: #e21e80;
@@ -11556,11 +11573,17 @@ html {
 
 .bg-gradient-primary-to-secondary {
   background: #1e30f3;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background: linear-gradient(135deg, #0A400C 0%, #B1AB86 100%);
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  background: -webkit-linear-gradient(315deg, #0A400C 0%, #B1AB86 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-secondary {
+  background: -webkit-linear-gradient(315deg, #5D8736 0%, #3E7B27 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
