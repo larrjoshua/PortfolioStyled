@@ -603,6 +603,18 @@ progress {
   height: auto;
 }
 
+.image-crop-container {
+  width: 1300px;
+  height: 400px;
+  overflow: hidden; /* This hides any part of the image that overflows the container */
+}
+
+.cropped-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This is what performs the crop */
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
